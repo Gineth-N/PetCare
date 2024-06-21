@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title> Equipo médico </title>
+    <title> Home </title>
     <link rel="shortcut icon" href="Material PetCare/Logo veterinaria.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
@@ -20,11 +20,11 @@
             src: url("Poetsen_One/PoetsenOne-Regular.ttf")
         }
 
-        /*Frame 1 */
+        /*Frame 1*/
         header {
             width: auto;
             height: 150px;
-            background-color: white;
+            background-color: rgb(255, 217, 147);
             font-size: 25px;
             text-align: right;
             font-family: "lato";
@@ -33,13 +33,16 @@
             align-items: center;
         }
 
+        .home {
+            padding-bottom: 10rem;
+        }
+
         .menu {
             padding-left: 36rem;
             text-decoration: underline;
-            gap: 3rem;
-            position: relative;
             display: flex;
             align-items: flex-end;
+            gap: 3rem;
         }
 
         a {
@@ -51,158 +54,218 @@
             text-decoration: underline;
         }
 
+        .gato {
+            position: relative;
+        }
+
+        .gato img {
+            width: 100%;
+            height: auto;
+        }
+
+        .textoimagen {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-family: "lato"
+        }
+
+        .textoimagen h1 {
+            font-family: "Poetsen";
+            font-size: 100px;
+            text-align: left;
+            color: #8B4116;
+        }
+
+        .disponibilidad {
+            position: absolute;
+            background-color: #f8ceb8;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.5em;
+            color: #333;
+            cursor: pointer;
+            border-radius: 10px;
+            font-family: "poetsen";
+            margin-left: 1540px;
+            margin-top: -100px;
+        }
+
+        .disponibilidad:hover {
+            text-decoration: underline;
+            color: #8D5524
+        }
+
+
+        .cuadroblanco {
+            position: absolute;
+            top: 86%;
+            left: 15%;
+            color: black;
+            padding: 20px;
+            font-family: "poetsen";
+        }
+
         .logo {
             padding-left: 3rem;
         }
 
-        /*Frame 2 */
-        .rosa {
-            width: auto;
-            height: 350px;
-            background-color: #FFE9DD;
-            margin-top: 200px;
+        .nosotros {
+            padding: 80px;
+            background-color: #dceef1;
         }
 
-        .azul {
-            width: auto;
-            height: 350px;
-            background-color: #D1E8ED;
-            margin-top: -30px;
+        /*Frame 2*/
+        .imagen1 {
+            float: left;
+            margin-right: 40px;
+            margin-top: -105px;
+            padding-left: 3rem;
+            box-shadow: black;
         }
 
-        h1 {
-            font-size: 40px;
+
+        .titulo1 {
             font-family: "poetsen";
-            padding-top: 80px;
-            text-align: center;
-        }
-
-        h2 {
             font-size: 30px;
-            font-family: "lato";
+            margin-bottom: 20px;
+            text-align: center;
+            padding-left: 80px;
+            padding-top: 30px;
+        }
+
+        .texto {
             padding-top: 10px;
+            font-family: "lato";
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .space {
+            width: auto;
+            height: 200px;
+            background-color: white;
+        }
+
+        .contador {
+            padding-top: 30rem;
+            padding: 80px;
+            background-color: #f8ceb8;
+        }
+
+        .estadisticas {
+            display: flex;
+            flex-wrap: wrap;
+            font-family: "poetsen";
+            font-size: 115px;
+        }
+
+        .estadistica {
+            flex: 1 0 30%;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #8B4116
+        }
+
+        .estadistica p {
+            font-family: "poetsen";
+            font-size: 40px;
+            color: black;
+        }
+
+        nav {
+            background-color: #f8cfb9;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
             text-align: center;
         }
 
-        .veterinaria .auxiliar {
-            position: relative;
+        nav li {
+            display: inline-block;
         }
 
-        .veterinaria {
-            padding-left: 100px;
-            margin-top: -480px;
+        nav a {
+            justify-content: space-around;
+            padding: 10px 15px;
+            background-color: #FFECB3;
+            color: black;
+            text-decoration: none;
+            border: none;
+            font-family: "poetsen";
+            border-radius: 10px;
+            font-size: 30px;
+            margin: 0px 175px 0px 180px;
         }
 
-        .auxiliar {
-            text-align: right;
-            padding-right: 100px;
-            margin-top: -440px;
-        }
-
-        .huellasrosas {
-            float: right;
-            position: relative;
-            margin-top: -450px;
-            padding-right: 180px;
-            margin-left: -350px;
-        }
-
-        .huellaazul {
-            margin-top: -500px;
-            padding-left: 200px;
-        }
-
-        .fondo-color {
-            width: auto;
-            height: 730px;
-            background-color: #F9F5DE;
-            margin-top: 240px;
-        }
-
-        /*Frame 3 */
-        .collage {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(80px, 20rem));
-            gap: 10px;
-            padding-left: 100px;
-            padding-top: 80px;
+        nav a:hover {
+            color: #8B4116;
+            text-decoration: underline;
 
         }
 
-        .gatoo {
-            padding-left: 330px;
-            width: 320px;
-            height: auto;
-            margin-top: -370px;
-        }
-
-        .perro_formal {
-            padding-left: 660px;
-            position: relative;
-            width: 320px;
-            height: auto;
-            margin-top: -255px;
-        }
-
-        .mascota {
-            position: relative;
-        }
-
-        .mascota img {
-            width: 100%;
-            height: auto;
+        .servicios-contenido {
             display: block;
-            object-fit: cover;
-            transition: transform 0.3s ease;
+            align-items: flex-end;
+            text-align: right;
+            background-image: url("Home\ perro.png");
+            background-size: cover;
+            background-position: center;
+            height: 650px;
         }
 
-        .mascota img {
-            width: 100%;
-            height: auto;
-            border-radius: 15px;
-            margin-top: 30px
+        .servicios-contenido h2 {
+            font-family: "poetsen";
+            font-size: 40px;
+            text-align: center;
+            padding-left: 900px;
+            padding-top: 100px;
+
         }
 
-        .collage img:hover {
-            animation: shake 0.5s;
-            animation-iteration-count: infinite;
+        .service a {
+            margin: 0;
+            font-size: 1.3rem;
+            color: #333;
+            font-family: "lato";
+            text-align: center;
+            font-weight: bold;
         }
 
-        @keyframes shake {
-            0% {
-                transform: translate(1px, 1px) rotate(0deg);
-            }
-
-            30% {
-                transform: translate(3px, 2px) rotate(0deg);
-            }
-
-            60% {
-                transform: translate(-3px, 1px) rotate(0deg);
-            }
-
-            90% {
-                transform: translate(1px, 2px) rotate(0deg);
-            }
+        .service {
+            position: relative;
+            bottom: 20px;
+            padding-right: 160px;
+            padding-top: 50px;
+            display: inline-block;
         }
 
-        .agendar {
-            background-color: #FCF5C7;
+        .service img {
+            margin-top: 25px;
+        }
+
+        .ver-mas {
+            background-color: #FFECB3;
             border: none;
             padding: 15px 20px;
             font-size: 1.5em;
-            color: black;
-            border-radius: 15px;
+            color: #333;
+            cursor: pointer;
+            border-radius: 5px;
             font-family: "poetsen";
-            margin-top: 30px;
-            float: right;
-            margin-right: 140px;
-            box-shadow: 0 1px 1px black;
+            margin-right: 50px;
+            margin-top: 90px;
         }
 
-        .agendar:hover {
+        .ver-mas:hover {
             text-decoration: underline;
-            color: #8B4116
+            color: #8D5524
         }
 
         /*Footer*/
@@ -210,7 +273,6 @@
             background-color: #F3D5A6;
             color: #8D5524;
             font-family: "lato";
-            margin-top: 1450px;
         }
 
         .contenido-footer {
@@ -338,6 +400,7 @@
             padding-bottom: 20px;
         }
     </style>
+</head>
 
 <body>
     <header>
@@ -364,67 +427,101 @@
         <div class="logo">
             <img src="Material PetCare/Logo veterinaria.png" alt="Logo" width="auto" height="90px">
         </div>
+
     </header>
-</body>
-<div>
-    <img src="Material PetCare/Portada equipo.png" alt="portada" width="auto" height="1065px">
-</div>
-
-<div class="rosa">
-
-    <div class="textorosa">
-        <h1> Veterinaria especializada </h1>
-        <h2> Profesional altamente capacitada <br> con experiencia en <br> diagnóstico, tratamiento y cirugias </h2>
-    </div>
-    <div class="veterinaria"><img src="Material PetCare/Vet equipo.png" width="auto" height="680px"></div>
-    <div class="huellasrosas"><img src="Material PetCare/Huellas rosas.png" alt="Huellas rosas" width="auto"
-            height="250px"></div>
-
-    <div class="azul">
-        <div class="textoazul">
-            <h1> Auxiliar veterinaria </h1>
-            <h2> Con habilidades en cuidado <br> animal, asistencia en <br> procedimientos médicos y más </h2>
+    <div class="home">
+        <div class="gato">
+            <img src="Material PetCare/Home gatp.png" alt="Home" width="auto" height="900">
         </div>
+
+        <div class="textoimagen">
+            <h1> ¡Bienvenidos <br> a PetCare!</h1>
+        </div>
+
+        <div class="cuadroblanco">
+            <h1> Porque sabemos que <br> ellos merecen lo mejor</h1>
+        </div>
+        <button class="disponibilidad"><a href="https://wa.link/ds395i"> Consulta disponibilidad </a></button>
     </div>
-    <div class="auxiliar"><img src="Material PetCare/Auxiliar equipo.png" width="auto" height="680px"></div>
-    <div class="huellaazul"><img src="Material PetCare/Huella azul.png" alt="huella azul" width="auto" height="250px">
+
+    <main>
+        <section class="nosotros">
+            <div class="imagen1">
+                <img src="Material PetCare/Perro contador.jpg" width="500px" height="auto">
+            </div>
+            <div class="titulo1">
+                <h2>Te contamos sobre nosotros</h2>
+            </div>
+            <div class="texto">
+                <p>Somos una veterinaria que destaca gracias a <br> su compromiso con el bienestar de las mascotas,<br>
+                    y por supuesto, la satisfacción de <br> cada cliente.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="space">
+
     </div>
-
-    <div class="fondo-color">
-
-        <main>
-            <div class="collage">
-                <div class="mascota">
-                    <div class="loro"><img src="Material PetCare/collage loro.jpg" alt="loro"></div>
+    <main>
+        <section class="contador">
+            <div class="estadisticas">
+                <div class="estadistica">
+                    <span class="numero">+900</span>
+                    <p>Clientes Satisfechos</p>
                 </div>
-                <div class="mascota">
-                    <div class="hamster"></div><img src="Material PetCare/collage hamster.jpg">
+                <div class="estadistica">
+                    <span class="numero">+20</span>
+                    <p>Personas de equipo médico</p>
                 </div>
-
-                <div class="mascota">
-                    <div class="gato_comiendo"><img src="Material PetCare/collage gato comiendo.jpg" alt="gato">
-                    </div>
-                </div>
-                <div class="mascota">
-                    <div class="perro_vet"></div><img src="Material PetCare/Collage perro veterinario.jpg"
-                        alt="perro_vet">
-                </div>
-                <div class="mascota">
-                    <div class="perro_baño"></div><img src="Material PetCare/Collage perro baño.jpg" alt="perro_baño">
-                </div>
-                <div class="mascota">
-                    <div class="gatoo"><img src="Material PetCare/collage gato ventana.jpg"></div>
-                </div>
-                <div class="mascota">
-                    <div class="perro_formal"><img src="Material PetCare/collage perro formal.jpg">
-                    </div>
+                <div class="estadistica">
+                    <span class="numero">+30</span>
+                    <p>Servicios al día</p>
                 </div>
             </div>
-
-            <button class="agendar"><a href="https://wa.link/ds395i">  Agenda aquí </a></button>
-    </div>
+            <nav>
+                <div class="botones">
+                    <ul>
+                        <li>
+                            <a href="https://wa.link/ds395i" class="boton1">Agenda aquí</a>
+                            <a href="Equipo_medico.html" class="boton2">Conócelos</a>
+                            <a href="Servicios.html" class="boton3">Más información</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
     </main>
-</div>
+
+    <div class="space"></div>
+
+    <main>
+        <section class="servicios">
+            <div class="servicios-contenido">
+                <h2>Tenemos distintos servicios <br> para asegurar su salud</h2><br>
+                <div class="iconos">
+                    <div class="service">
+                        <img src="Material PetCare/consultas home.png" alt="Consultas" width="auto"
+                            height="100px"><br><br>
+                        <a href="https://wa.link/ds395i"> Consultas </a>
+                    </div>
+                    <div class="service">
+                        <img src="Material PetCare/Vacunas home.png" alt="Vacunación" width="auto"
+                            height="100px"><br><br>
+                        <a href="https://wa.link/ds395i"> Vacunación </a>
+                    </div>
+                    <div class="service">
+                        <img src="Material PetCare/cirugias home.png" alt="Cirugías" width="auto"
+                            height="100px"><br><br>
+                        <a href="https://wa.link/ds395i"> Cirugias </a>
+                    </div>
+                </div>
+                <button class="ver-mas"><a href="Servicios.html"> Ver más </a></button>
+            </div>
+        </section>
+    </main>
+
+    <div class="space"></div>
+</body>
 
 <footer class="footer">
     <div class="contenido-footer">
