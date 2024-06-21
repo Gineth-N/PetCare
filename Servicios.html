@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title> Servicios </title>
+    <link rel="shortcut icon" href="Material PetCare/Logo veterinaria.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+        @font-face {
+            font-family: "lato";
+            src: url(Lato/Lato-Regular.ttf)
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&display=swap');
+
+        @font-face {
+            font-family: "Poetsen";
+            src: url("Poetsen_One/PoetsenOne-Regular.ttf")
+        }
+
+        /*Frame 1*/
+        header {
+            width: auto;
+            height: 150px;
+            background-color: white;
+            font-size: 25px;
+            text-align: right;
+            font-family: "lato";
+            border: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu {
+            padding-left: 36rem;
+            text-decoration: underline;
+            display: flex;
+            align-items: flex-end;
+            gap: 3rem;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: #8B4116;
+            text-decoration: underline;
+        }
+
+        .logo {
+            padding-left: 3rem;
+        }
+
+        .gato {
+            position: relative;
+        }
+
+        .gato img {
+            width: 100%;
+            height: auto;
+        }
+
+        .textoimagen {
+            position: absolute;
+            top: 20%;
+            font-family: "Poetsen";
+            font-size: 60px;
+            right: 5%;
+            color: #a0ced9;
+        }
+
+        .conocelos {
+            position: absolute;
+            top: 100%;
+            right: 5%;
+            color: black;
+            padding: 20px;
+            font-family: "poetsen";
+        }
+
+        /*Frame 2*/
+        .perro {
+            float: right;
+        }
+
+        .columnas {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 35px;
+            padding-top: 150px;
+            padding-bottom: 100px;
+            padding-left: 5rem;
+            padding-right: 10rem;
+        }
+
+        .rectangulo {
+            width: 95%;
+            height: 90px;
+            background-color: #FEE1D1;
+            border: 10px solid #FFC09F;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .contenido {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .rectangulo:hover {
+            width: 100%;
+            height: 100px;
+            border-radius: 20px;
+        }
+
+        .huella {
+            width: 40px;
+            margin-right: 15px
+        }
+
+        .titulo1 {
+            font-size: 1.2rem;
+            margin: 0;
+            font-family: "poetsen";
+        }
+
+        .texto_centrado {
+            margin-top: 10px;
+        }
+
+        .agenda {
+            background-color: #FFC09F;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.5em;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: "poetsen";
+            margin-left: 1040px;
+            margin-top: 20px;
+        }
+
+        .agenda:hover {
+            text-decoration: underline;
+            color: #8B4116
+        }
+
+        /*Frame 3*/
+
+        .contendor {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cajas-contenedor {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px
+        }
+
+        .medicamentos {
+            font-family: "poetsen";
+            font-size: 80px;
+            color: #a0ced9;
+            text-shadow: initial;
+            padding-left: 50px;
+            padding-top: 40px;
+            margin-bottom: -90px;
+        }
+
+        .text2 {
+            font-family: "poetsen";
+            font-size: 40px;
+            color: black;
+            padding-left: 50px;
+        }
+
+        .img-medicamentos {
+            padding-top: 2rem;
+            padding-left: 50px;
+            display: inline-block;
+        }
+
+        .caja {
+            width: 400px;
+            margin: 10px 10px 10px 10px;
+            background-color: #a0ced9;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px black;
+        }
+
+        .caja img {
+            object-fit: cover;
+            padding: 45px;
+        }
+
+        .text {
+            padding: 20px;
+        }
+
+        .text h2 {
+            font-size: 26px;
+            font-family: "poetsen";
+            text-align: center;
+        }
+
+        .text h3 {
+            font-size: 20px;
+            margin-top: -2rem;
+            font-family: "lato";
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2b95af;
+            color: black;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: "poetsen";
+            margin-left: 30%;
+        }
+
+        .btn:hover {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .compra {
+            background-color: #a0ced9;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.5em;
+            color: black;
+            cursor: pointer;
+            border-radius: 5px;
+            font-family: "poetsen";
+            margin-left: 1600px;
+            margin-top: 20px;
+        }
+
+        .compra:hover {
+            text-decoration: underline;
+            color: #8B4116
+        }
+
+        /*Footer*/
+        footer {
+            background-color: #F3D5A6;
+            color: #8D5524;
+            font-family: "lato";
+        }
+
+        .contenido-footer {
+            display: grid;
+            margin: 0 20px;
+            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 40px;
+        }
+
+        .secciones h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-family: "poetsen";
+            font-size: 30px;
+        }
+
+        .secciones strong {
+            margin: 10px 0;
+            font-family: "lato";
+            padding-left: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .secciones p {
+            margin: 10px 0;
+            font-family: "lato";
+            padding-left: 30px;
+            font-size: 20px;
+            font-style: italic;
+            color: black;
+        }
+
+        .redes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-left: 1rem;
+            border-right: 1px solid #8D5524;
+        }
+
+        .redes:hover{
+            color:#8B4116;
+            text-decoration: underline;
+        }
+
+        .links {
+            list-style: none;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .links li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+        }
+
+        .links a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+
+        .links img {
+            margin-right: 10px;
+        }
+
+        .horario {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border-right: 1px solid #8D5524;
+            align-items: end;
+        }
+
+        .horario h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-family: "poetsen";
+            font-size: 30px;
+        }
+
+        .emergencia-boton {
+            background-color: #B17807;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            font-family: "poetsen";
+            font-size: 15px;
+        }
+
+        .emergencia-boton:hover {
+            color: #8D5524;
+            text-decoration: underline;
+        }
+
+        .logo-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 85%;
+            padding-left: 2rem;
+            border-left: 1px solid #8D5524;
+        }
+
+        .logo-footer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .derechos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .derechos p {
+            margin: 0;
+            color: #8D5524;
+            padding-bottom: 20px;
+        }
+    </style>
+
+<body>
+    <header>
+        <div>
+            <img src="Material PetCare/Texto y huellita.png" alt="Logo y tipografía" width="auto" height="300px">
+        </div>
+        <div class="menu">
+            <h3>
+                <a href="Home.html">Home</a>
+            </h3>
+            <h3>
+                <a href="Servicios.html">Servicios</a>
+            </h3>
+            <h3>
+                <a href="Equipo_medico.html">Equipo</a>
+            </h3>
+            <h3>
+                <a href="Contacto.html">Contacto</a>
+            </h3>
+            <h3>
+                <a href="Testimonios.html">Testimonios</a>
+            </h3>
+        </div>
+        <div class="logo">
+            <img src="Material PetCare/Logo veterinaria.png" alt="Logo" width="auto" height="90px">
+        </div>
+    </header>
+    <div class="servicios">
+        <div class="gato">
+            <img src="Material PetCare/Gato Servicios.png" alt="Servicios" width="auto" height="935">
+        </div>
+
+        <div class="textoimagen">
+            <h1> Servicios </h1>
+        </div>
+        <div class="conocelos">
+            <h1> ¡Conocelos a continuación! </h1>
+        </div>
+    </div>
+
+    <div class="todos">
+        <div class="perro">
+            <img src="Material PetCare/Perrito servicios.png" alt="Servicios" width="auto" height="800">
+        </div>
+
+        <div class="textoimagen">
+            <h1> Servicios </h1>
+        </div>
+        <div class="conocelos">
+            <h1> ¡Conocelos a continuación! </h1>
+        </div>
+    </div>
+
+    <div>
+        <div class="columnas">
+            <div class="rectangulo">
+                <div class="contenido">
+                    <img class="huella" src="Material PetCare/Huella sola.png" alt="Huella">
+                    <div class="texto">
+                        <h1 class="titulo1">Consultas <br>Regulares</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rectangulo">
+                <div class="contenido">
+                    <img class="huella" src="Material PetCare/Huella sola.png" alt="Huella">
+                    <h1 class="titulo1">Vacunación</h1>
+                </div>
+            </div>
+
+            <div class="rectangulo">
+                <div class="contenido">
+                    <img class="huella" src="Material PetCare/Huella sola.png" alt="Huella">
+                    <h1 class="titulo1">Desparasitación</h1>
+                </div>
+            </div>
+
+            <div class="rectangulo">
+                <div class="contenido">
+                    <img class="huella" src="Material PetCare/Huella sola.png" alt="Huella">
+                    <h1 class="titulo1">Cirugias</h1>
+                </div>
+            </div>
+
+            <div class="rectangulo">
+                <div class="contenido">
+                    <img class="huella" src="Material PetCare/Huella sola.png" alt="Huella">
+                    <h1 class="titulo1">Venta de<br>medicación </h1>
+                </div>
+            </div>
+
+            <div class="rectangulo">
+                <div class="contenido">
+                    <img class="huella" src="Material PetCare/Huella sola.png" alt="Huella">
+                    <h1 class="titulo1">Limpieza <br> general</h1>
+                </div>
+            </div>
+
+            <div class="rectangulo">
+                <div class="contenido">
+                    <img class="huella" src="Material PetCare/Huella sola.png" alt="Huella">
+                    <h1 class="titulo1">Cuidado <br> dental</h1>
+                </div>
+            </div>
+
+            <div class="rectangulo">
+                <div class="contenido">
+                    <img class="huella" src="Material PetCare/Huella sola.png" alt="Huella">
+                    <h1 class="titulo1">Control de <br> peso </h1>
+                </div>
+            </div>
+
+            <div class="rectangulo">
+                <div class="contenido">
+                    <img class="huella" src="Material PetCare/Huella sola.png" alt="Huella">
+                    <h1 class="titulo1">Guarderia</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="agenda"> <a href="https://wa.link/ds395i"> Agendar </a></button>
+
+    </div>
+
+    <div class="medicamentos">
+        <p> Medicamentos </p>
+    </div>
+    <div class="text2">
+        <p> que manejamos </p>
+    </div>
+
+    <div class="contendor">
+        <div class="cajas-contenedor">
+            <div class="img-medicamentos">
+                <img src="Material PetCare/perro medicamento.jpg" alt="vet" width="auto" height="520px">
+            </div>
+
+            <div class="caja">
+                <img src="Material PetCare/Tripack gatos.jpg" alt="Tripack gatos" width="300px" height="auto">
+                <div class="text">
+                    <h3>TriPack Antiparasitario para gatos Advocate</h3>
+                    <h2> 95.900 COP </h2>
+                    <a href="https://www.agrocampo.com.co/tripack-advocate-antiparasitario-para-gatos-hasta-4-kg-pipeta-por-0-4-ml"
+                        class="btn">Solicita aquí</a>
+                </div>
+            </div>
+            <div class="caja">
+                <img src="Material PetCare/Pomada.jpg" alt="Pomada" width="300px" height="auto">
+                <div class="text">
+                    <h3>Pomada para perros y gatos <br> Pomada Alfa</h3>
+                    <h2> 42.000 COP </h2>
+                    <a href="https://www.agrocampo.com.co/pomada-alfa-350g" class="btn">Solicita aquí</a>
+                </div>
+            </div>
+            <div class="caja">
+                <img src="Material PetCare/Antipulgas perros.jpg" alt="Antipulgas perros" width="300px" height="auto">
+                <div class="text">
+                    <h3> Antipulgas para perros <br> NexGard</h3>
+                    <h2> 51.900 COP </h2>
+                    <a href="https://www.agrocampo.com.co/nexgard-antipulgas-para-perros-de-25-1-a-50-kg"
+                        class="btn">Solicita
+                        aquí</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="compra"><a href="https://www.agrocampo.com.co/nexgard"> Compra aquí</button> </a>
+
+    <footer class="footer">
+        <div class="contenido-footer">
+            <div class="secciones">
+                <h3>Contáctanos</h3>
+                <div class="redes">
+                    <ul class="links">
+                        <li><a href="https://www.facebook.com/share/tDGEAud5ZQ5vSXKm/?mibextid=qi2Omg"><img src="Material PetCare/Footer facebook.png" alt="Facebook" width="auto"
+                                    height="30px"> Facebook</a></li>
+                        <li><a href="https://wa.link/ds395i"><img src="Material PetCare/Whatsapp footer.png" alt="WhatsApp" width="auto"
+                                    height="30px"> WhatsApp</a></li>
+                        <li><a href="https://www.instagram.com/unusuario._mas?igsh=MTA4aGE0djU5OXk0OA=="><img src="Material PetCare/Insta footer.png" alt="Instagram" width="auto"
+                                    height="30px"> Instagram</a></li>
+                    </ul>
+
+                    <ul class="links">
+                        <li><a href="mailto:petcare_veterinaria@outlook.com"><img src="Material PetCare/mail footer.png" alt="Email" width="auto"
+                                    height="30px">
+                                E-mail</a></li>
+                        <li><a href="https://maps.app.goo.gl/HibSxju5w66Ym2iD6"><img src="Material PetCare/ubicacion footer.png" alt="Ubicación" width="auto"
+                                    height="30px"> Ubicación</a></li>
+                        <li><a href="tel:57 601 2281260"><img src="Material PetCare/Linea fija footer.png" alt="Línea fija" width="auto"
+                                    height="30px"> Línea fija</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="horario">
+                <div class="columna">
+                    <h3>Horario laboral</h3>
+                    <strong>Atención presencial</strong>
+                    <p>Lunes - Viernes<br>7:00 a.m - 10:00 p.m</p>
+                    <p>Sábado - Domingo<br>10:00 a.m - 6:00 p.m</p><br>
+                </div>
+                <div class="columna">
+                    <strong>En caso de emergencias</strong>
+                    <p>Tenemos línea fija<br>Lunes - Domingo<br>24 horas el día</p>
+                    <button class="emergencia-boton"><a href="tel:57 601 2281260"> Llamar </a></button>
+                </div>
+            </div>
+
+            <div class="secciones">
+                <h3>Colaboradores</h3>
+                <p><a href="https://www.agrocampo.com.co/nexgard">Agrocampo S.A.S (NexGard)</a></p>
+            </div>
+            <div class="logo-footer">
+                <img src="Material PetCare/Logo footer.png" alt="Logo PetCare">
+            </div>
+        </div>
+
+        <div class="derechos">
+            <p>Copyright © 2024 PetCare Gineth Novoa Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title> Equipo médico </title>
+    <link rel="shortcut icon" href="Material PetCare/Logo veterinaria.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+        @font-face {
+            font-family: "lato";
+            src: url(Lato/Lato-Regular.ttf)
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poetsen+One&display=swap');
+
+        @font-face {
+            font-family: "Poetsen";
+            src: url("Poetsen_One/PoetsenOne-Regular.ttf")
+        }
+
+        /*Frame 1 */
+        header {
+            width: auto;
+            height: 150px;
+            background-color: white;
+            font-size: 25px;
+            text-align: right;
+            font-family: "lato";
+            border: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .menu {
+            padding-left: 36rem;
+            text-decoration: underline;
+            gap: 3rem;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+        }
+
+        a {
+            color: black;
+        }
+
+        a:hover {
+            color: #8B4116;
+            text-decoration: underline;
+        }
+
+        .logo {
+            padding-left: 3rem;
+        }
+
+        /*Frame 2 */
+        .rosa {
+            width: auto;
+            height: 350px;
+            background-color: #FFE9DD;
+            margin-top: 200px;
+        }
+
+        .azul {
+            width: auto;
+            height: 350px;
+            background-color: #D1E8ED;
+            margin-top: -30px;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-family: "poetsen";
+            padding-top: 80px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-family: "lato";
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        .veterinaria .auxiliar {
+            position: relative;
+        }
+
+        .veterinaria {
+            padding-left: 100px;
+            margin-top: -480px;
+        }
+
+        .auxiliar {
+            text-align: right;
+            padding-right: 100px;
+            margin-top: -440px;
+        }
+
+        .huellasrosas {
+            float: right;
+            position: relative;
+            margin-top: -450px;
+            padding-right: 180px;
+            margin-left: -350px;
+        }
+
+        .huellaazul {
+            margin-top: -500px;
+            padding-left: 200px;
+        }
+
+        .fondo-color {
+            width: auto;
+            height: 730px;
+            background-color: #F9F5DE;
+            margin-top: 240px;
+        }
+
+        /*Frame 3 */
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 20rem));
+            gap: 10px;
+            padding-left: 100px;
+            padding-top: 80px;
+
+        }
+
+        .gatoo {
+            padding-left: 330px;
+            width: 320px;
+            height: auto;
+            margin-top: -370px;
+        }
+
+        .perro_formal {
+            padding-left: 660px;
+            position: relative;
+            width: 320px;
+            height: auto;
+            margin-top: -255px;
+        }
+
+        .mascota {
+            position: relative;
+        }
+
+        .mascota img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .mascota img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 30px
+        }
+
+        .collage img:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+        }
+
+        .agendar {
+            background-color: #FCF5C7;
+            border: none;
+            padding: 15px 20px;
+            font-size: 1.5em;
+            color: black;
+            border-radius: 15px;
+            font-family: "poetsen";
+            margin-top: 30px;
+            float: right;
+            margin-right: 140px;
+            box-shadow: 0 1px 1px black;
+        }
+
+        .agendar:hover {
+            text-decoration: underline;
+            color: #8B4116
+        }
+
+        /*Footer*/
+        footer {
+            background-color: #F3D5A6;
+            color: #8D5524;
+            font-family: "lato";
+            margin-top: 1450px;
+        }
+
+        .contenido-footer {
+            display: grid;
+            margin: 0 20px;
+            gap: 30px;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 40px;
+        }
+
+        .secciones h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-family: "poetsen";
+            font-size: 30px;
+        }
+
+        .secciones strong {
+            margin: 10px 0;
+            font-family: "lato";
+            padding-left: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .secciones p {
+            margin: 10px 0;
+            font-family: "lato";
+            padding-left: 30px;
+            font-size: 20px;
+            font-style: italic;
+            color: black;
+        }
+
+        .redes {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-left: 1rem;
+            border-right: 1px solid #8D5524;
+        }
+
+        .redes:hover {
+            color: #8B4116;
+            text-decoration: underline;
+        }
+
+        .links {
+            list-style: none;
+            padding: 0;
+            font-size: 20px;
+        }
+
+        .links li {
+            margin-bottom: 10px;
+            padding-left: 30px;
+        }
+
+        .links a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+
+        .links img {
+            margin-right: 10px;
+        }
+
+        .horario {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            border-right: 1px solid #8D5524;
+            align-items: end;
+        }
+
+        .horario h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            font-family: "poetsen";
+            font-size: 30px;
+        }
+
+        .emergencia-boton {
+            background-color: #B17807;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+            font-family: "poetsen";
+            font-size: 15px;
+        }
+
+        .emergencia-boton:hover {
+            color: #8D5524;
+            text-decoration: underline;
+        }
+
+        .logo-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 85%;
+            padding-left: 2rem;
+            border-left: 1px solid #8D5524;
+        }
+
+        .logo-footer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .derechos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .derechos p {
+            margin: 0;
+            color: #8D5524;
+            padding-bottom: 20px;
+        }
+    </style>
+
+<body>
+    <header>
+        <div>
+            <img src="Material PetCare/Texto y huellita.png" alt="Logo y tipografía" width="auto" height="300px">
+        </div>
+        <div class="menu">
+            <h3>
+                <a href="Home.html">Home</a>
+            </h3>
+            <h3>
+                <a href="Servicios.html">Servicios</a>
+            </h3>
+            <h3>
+                <a href="Equipo_medico.html">Equipo</a>
+            </h3>
+            <h3>
+                <a href="Contacto.html">Contacto</a>
+            </h3>
+            <h3>
+                <a href="Testimonios.html">Testimonios</a>
+            </h3>
+        </div>
+        <div class="logo">
+            <img src="Material PetCare/Logo veterinaria.png" alt="Logo" width="auto" height="90px">
+        </div>
+    </header>
+</body>
+<div>
+    <img src="Material PetCare/Portada equipo.png" alt="portada" width="auto" height="1065px">
+</div>
+
+<div class="rosa">
+
+    <div class="textorosa">
+        <h1> Veterinaria especializada </h1>
+        <h2> Profesional altamente capacitada <br> con experiencia en <br> diagnóstico, tratamiento y cirugias </h2>
+    </div>
+    <div class="veterinaria"><img src="Material PetCare/Vet equipo.png" width="auto" height="680px"></div>
+    <div class="huellasrosas"><img src="Material PetCare/Huellas rosas.png" alt="Huellas rosas" width="auto"
+            height="250px"></div>
+
+    <div class="azul">
+        <div class="textoazul">
+            <h1> Auxiliar veterinaria </h1>
+            <h2> Con habilidades en cuidado <br> animal, asistencia en <br> procedimientos médicos y más </h2>
+        </div>
+    </div>
+    <div class="auxiliar"><img src="Material PetCare/Auxiliar equipo.png" width="auto" height="680px"></div>
+    <div class="huellaazul"><img src="Material PetCare/Huella azul.png" alt="huella azul" width="auto" height="250px">
+    </div>
+
+    <div class="fondo-color">
+
+        <main>
+            <div class="collage">
+                <div class="mascota">
+                    <div class="loro"><img src="Material PetCare/collage loro.jpg" alt="loro"></div>
+                </div>
+                <div class="mascota">
+                    <div class="hamster"></div><img src="Material PetCare/collage hamster.jpg">
+                </div>
+
+                <div class="mascota">
+                    <div class="gato_comiendo"><img src="Material PetCare/collage gato comiendo.jpg" alt="gato">
+                    </div>
+                </div>
+                <div class="mascota">
+                    <div class="perro_vet"></div><img src="Material PetCare/Collage perro veterinario.jpg"
+                        alt="perro_vet">
+                </div>
+                <div class="mascota">
+                    <div class="perro_baño"></div><img src="Material PetCare/Collage perro baño.jpg" alt="perro_baño">
+                </div>
+                <div class="mascota">
+                    <div class="gatoo"><img src="Material PetCare/collage gato ventana.jpg"></div>
+                </div>
+                <div class="mascota">
+                    <div class="perro_formal"><img src="Material PetCare/collage perro formal.jpg">
+                    </div>
+                </div>
+            </div>
+
+            <button class="agendar"><a href="https://wa.link/ds395i">  Agenda aquí </a></button>
+    </div>
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="contenido-footer">
+        <div class="secciones">
+            <h3>Contáctanos</h3>
+            <div class="redes">
+                <ul class="links">
+                    <li><a href="https://www.facebook.com/share/tDGEAud5ZQ5vSXKm/?mibextid=qi2Omg"><img
+                                src="Material PetCare/Footer facebook.png" alt="Facebook" width="auto" height="30px">
+                            Facebook</a></li>
+                    <li><a href="https://wa.link/ds395i"><img src="Material PetCare/Whatsapp footer.png" alt="WhatsApp"
+                                width="auto" height="30px"> WhatsApp</a></li>
+                    <li><a href="https://www.instagram.com/unusuario._mas?igsh=MTA4aGE0djU5OXk0OA=="><img
+                                src="Material PetCare/Insta footer.png" alt="Instagram" width="auto" height="30px">
+                            Instagram</a></li>
+                </ul>
+
+                <ul class="links">
+                    <li><a href="mailto:petcare_veterinaria@outlook.com"><img src="Material PetCare/mail footer.png"
+                                alt="Email" width="auto" height="30px">
+                            E-mail</a></li>
+                    <li><a href="https://maps.app.goo.gl/HibSxju5w66Ym2iD6"><img
+                                src="Material PetCare/ubicacion footer.png" alt="Ubicación" width="auto" height="30px">
+                            Ubicación</a></li>
+                    <li><a href="tel:57 601 2281260"><img src="Material PetCare/Linea fija footer.png" alt="Línea fija"
+                                width="auto" height="30px"> Línea fija</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="horario">
+            <div class="columna">
+                <h3>Horario laboral</h3>
+                <strong>Atención presencial</strong>
+                <p>Lunes - Viernes<br>7:00 a.m - 10:00 p.m</p>
+                <p>Sábado - Domingo<br>10:00 a.m - 6:00 p.m</p><br>
+            </div>
+            <div class="columna">
+                <strong>En caso de emergencias</strong>
+                <p>Tenemos línea fija<br>Lunes - Domingo<br>24 horas el día</p>
+                <button class="emergencia-boton"><a href="tel:57 601 2281260"> Llamar </a></button>
+            </div>
+        </div>
+
+        <div class="secciones">
+            <h3>Colaboradores</h3>
+            <p><a href="https://www.agrocampo.com.co/nexgard">Agrocampo S.A.S (NexGard)</a></p>
+        </div>
+        <div class="logo-footer">
+            <img src="Material PetCare/Logo footer.png" alt="Logo PetCare">
+        </div>
+    </div>
+
+    <div class="derechos">
+        <p>Copyright © 2024 PetCare Gineth Novoa Todos los derechos reservados</p>
+    </div>
+</footer>
